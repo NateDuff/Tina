@@ -23,7 +23,15 @@ module.exports = {
             },
           },
         },
-        plugins: ["gatsby-tinacms-git", "gatsby-tinacms-remark"],
+        plugins: [{
+          resolve: "gatsby-tinacms-git",
+          options: {
+            gitRemote: "git@github.com:NateDuff/Tina.git",
+            defaultCommitMessage: "Edited with TINA",
+            defaultCommitName: "Nate Duff",
+            defaultCommitEmail: "nate.duff@outlook.com"
+          }
+        }, "gatsby-tinacms-remark"],
       },
     },
     {
