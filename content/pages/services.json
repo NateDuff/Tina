@@ -14,5 +14,15 @@
       "_template": "ContentBlock"
     }
   ],
-  "displayTitle": true
+  "displayTitle": true,
+  "hero": {
+    "ctas": [
+      {
+        "label": "Test",
+        "link": "http://localhost:8000/services",
+        "primary": true,
+        "arrow": true
+      }
+    ]
+  }
 }
